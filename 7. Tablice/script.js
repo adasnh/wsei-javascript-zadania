@@ -109,3 +109,32 @@ const averageArrFunc1 = (arr = []) => {
 };
 
 console.log(averageArrFunc1([9, 1, 7, 2, 1, 1, 6, 3, 2]));
+
+//zadanie 7 
+const sortArray = randomTab.sort((a, b) => a - b);
+console.log(sortArray);
+
+// zadanie 8
+
+const arraySum1 = [2, 3, 2]
+const arraySum2 = [1, 4, 3]
+
+function sumArrayValue(array1, array2) {
+    let newArray = [];
+    array1.forEach((num1, i) => {
+        newArray.push(num1 + array2[i]);
+    });
+
+    return newArray;
+}
+
+console.log(sumArrayValue(arraySum1, arraySum2));
+
+//zadanie 10
+const arrayNum = [-4, 7, -1, 15, -33];
+
+function changeElement(array) {
+    return array.map(i => i *= -1); 
+}
+
+console.log(changeElement(arrayNum));
