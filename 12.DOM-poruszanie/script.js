@@ -19,7 +19,7 @@ let addEvent = function(elementId) {
         });
     }
     addEvent('ex2');
-//Zadanie 3, //Zadanie 4
+//Zadanie 3
  document.querySelector('#ex3').querySelectorAll('button').forEach((element) => {
         element.addEventListener('click', (event) => {
             event.target.nextElementSibling.style.display = event.target.nextElementSibling.style.display == 'none' ? 'block' : 'none';
@@ -35,6 +35,7 @@ toggleSpan();
             event.target.parentElement.style.backgroundColor = randomColor;
         });
     });
+//Zadanie 5
     const variant = 1;
     document.querySelectorAll('#ex5 div').forEach((div) => {
         div.addEventListener('mouseover', function () {
